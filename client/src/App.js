@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <JoinCommunityForm setUsers={setUsers} />
-      <UserList users={users} setUsers={setUsers} />
+      <UserList setUsers={setUsers} users={users}  />
       <Counter/>
     </div>
   );

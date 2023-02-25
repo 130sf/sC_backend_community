@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const UserList = (props) => {
 
     useEffect(() => {
-        fetch("http://localhost:1716/users")
+        fetch("http://localhost:9000/users")
         .then((response) => response.json())
         .then((usersData) => {
             props.setUsers(usersData)
